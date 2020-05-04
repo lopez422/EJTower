@@ -107,5 +107,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 70
-  impactEffect: {fileID: 3394254023517414382, guid: d20bc53fbb1f84e00888e31258aad418,
+  impactEffect: {fileID: 1784390975934078847, guid: 19294785aaf24443a8e67a6857cd8872,
     type: 3}
