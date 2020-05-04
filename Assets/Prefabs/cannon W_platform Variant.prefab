@@ -42,8 +42,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97838ea993aef4edfb95e29b4a43f678, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 15
-  fireRate: 1
+  range: 10
+  fireRate: 2.5
   partToRotate: {fileID: 5084508959021652405}
   turnSpeed: 10
   enemyTag: enemy
@@ -60,7 +60,7 @@ PrefabInstance:
     - target: {fileID: 4621799202517870544, guid: 6d63d5b23a26820498acc01ec65d09fb,
         type: 3}
       propertyPath: m_Name
-      value: cannon W/platform
+      value: cannon W_platform Variant
       objectReference: {fileID: 0}
     - target: {fileID: 8536771262512633283, guid: 6d63d5b23a26820498acc01ec65d09fb,
         type: 3}
