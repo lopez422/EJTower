@@ -13938,6 +13938,7 @@ GameObject:
   - component: {fileID: 1427152596}
   - component: {fileID: 1427152595}
   - component: {fileID: 1427152597}
+  - component: {fileID: 1427152598}
   m_Layer: 0
   m_Name: GameMaster
   m_TagString: Untagged
@@ -13992,6 +13993,19 @@ MonoBehaviour:
     type: 3}
   cannonWithBasePrefab: {fileID: 8009893076699119333, guid: 016f33b25e6b04dcd80e7d3fa120fc5d,
     type: 3}
+--- !u!114 &1427152598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1427152594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8a1a1c70a2524e808147643c860f954, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startMoney: 400
 --- !u!1001 &1428862595
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18329,6 +18343,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f31180235bf514f71a07a9c53d71694a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cannon:
+    prefab: {fileID: 2445416851790396409, guid: 3d2763d7bd81e456da027f0178f58061,
+      type: 3}
+    cost: 100
+  cannonWithBase:
+    prefab: {fileID: 8009893076699119333, guid: 016f33b25e6b04dcd80e7d3fa120fc5d,
+      type: 3}
+    cost: 250
 --- !u!1001 &1925333219
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20075,6 +20097,11 @@ PrefabInstance:
       propertyPath: m_Colors.m_HighlightedColor.b
       value: 0.36320752
       objectReference: {fileID: 0}
+    - target: {fileID: 1416836830287173664, guid: 59b77adc827dc431bb0c22bd5256190f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SelectUpgradeTurret
+      objectReference: {fileID: 0}
     - target: {fileID: 1416836830287173666, guid: 59b77adc827dc431bb0c22bd5256190f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -20354,7 +20381,7 @@ PrefabInstance:
     - target: {fileID: 5866839017771271527, guid: 1b850dfe8fa41421995c8a3beea6e28f,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PurchaseStandardTurret
+      value: SelectStandardTurret
       objectReference: {fileID: 0}
     - target: {fileID: 5866839017771271527, guid: 1b850dfe8fa41421995c8a3beea6e28f,
         type: 3}
