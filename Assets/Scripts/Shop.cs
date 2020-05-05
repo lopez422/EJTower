@@ -18,7 +18,7 @@ public class Shop : MonoBehaviour
 
     public void PurchaseUpgradeTurret()
     {
-    	Debug.Log("Another Standard Turret Selected");
+    	Debug.Log("Another Turret Selected");
     	buildManager.SetTurretToBuild(buildManager.cannonWithBasePrefab);
     }
 }
