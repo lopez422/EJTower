@@ -17,9 +17,6 @@ public class BuildManager : MonoBehaviour
 
 	}
 
-	public GameObject cannonPrefab;
-	public GameObject cannonWithBasePrefab;
-
 	public GameObject buildEffect;
 
     private TurretBlueprint turretToBuild;
@@ -38,7 +35,7 @@ public class BuildManager : MonoBehaviour
 
     	PlayerStats.Money -= turretToBuild.cost;
 
-    	GameObject turret = Instantiate(turretToBuild.prefab, node.GetBuildPosition(), Quaternion.identity);
+    	GameObject turret = Instantiate(turretToBuild.prefab, node.GetBuildPosition() + turretToBuild.offset, Quaternion.identity);
     	node.turret = turret;
 
     	GameObject effect = Instantiate(buildEffect, node.GetBuildPosition(), Quaternion.identity);

@@ -5,6 +5,7 @@ public class Shop : MonoBehaviour
 {
     public TurretBlueprint cannon;
     public TurretBlueprint cannonWithBase;
+    public TurretBlueprint wiz;
 
 	BuildManager buildManager;
 
@@ -23,5 +24,11 @@ public class Shop : MonoBehaviour
     {
     	Debug.Log("Another Turret Selected");
     	buildManager.SelectTurretToBuild(cannonWithBase);
+    }
+
+    public void SelectWizTurret()
+    {
+        Debug.Log("A Wiz Turret Selected");
+        buildManager.SelectTurretToBuild(wiz);
     }
 }

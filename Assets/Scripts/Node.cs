@@ -5,7 +5,7 @@ public class Node : MonoBehaviour
 {
 	public Color hoverColor;
 	public Color notEnoughMoneyColor;
-	public Vector3 positionOffset;
+	//public Vector3 positionOffset;
 
 	[Header("Optional")]
 	public GameObject turret;
@@ -27,7 +27,7 @@ public class Node : MonoBehaviour
 
 	public Vector3 GetBuildPosition()
 	{
-		return transform.position + positionOffset;
+		return transform.position;
 	}
 
 	void OnMouseDown()
