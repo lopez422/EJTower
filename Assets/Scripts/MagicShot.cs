@@ -5,8 +5,12 @@ public class MagicShot : MonoBehaviour
     private Transform target;
 
     public float speed = 70f;
+    public int damage = 50;
+
     public float explosionRadius = 0f;
     public GameObject impactEffect;
+
+
 
     public void Seek(Transform _target)
     {
@@ -67,7 +71,13 @@ public class MagicShot : MonoBehaviour
 
     void Damage(Transform enemy)
     {
-        Destroy(enemy.gameObject);
+        EnemyStart e = enemy.GetComponent<EnemyStart>();
+
+        if(e != null)
+        {
+            e.TakeDamage(damage);
+        }
+
     }
 
     void OnDrawGizmosSelected()
