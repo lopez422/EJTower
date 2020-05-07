@@ -5,6 +5,7 @@ public class WizController : MonoBehaviour
 {
 
     private Transform target;
+    private EnemyStart targetEnemy;
 
     [Header("General")]
     public float range = 15f;
@@ -13,6 +14,9 @@ public class WizController : MonoBehaviour
     public GameObject bulletPrefab;
     public float fireRate = 1f;
     private float fireCountdown = 0f;
+    public int damageOverTime = 30;
+
+    public float slowAmount = .3f;
     
     [Header("Use Laser ")]
     public bool useLaser = false;
@@ -54,6 +58,7 @@ public class WizController : MonoBehaviour
         if(nearestEnemy != null && shortestDistance <= range)
         {
             target = nearestEnemy.transform;
+            targetEnemy = nearestEnemy.GetComponent<EnemyStart>();
         }
         else 
         {
@@ -112,8 +117,12 @@ public class WizController : MonoBehaviour
 
     void Shoot()
     {
+
         GameObject magicGo = (GameObject)Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         MagicShot magicShot = magicGo.GetComponent<MagicShot>();
+
+        targetEnemy.TakeDamage(damageOverTime * Time.deltaTime);
+        targetEnemy.Slow(slowAmount);
 
         if(magicShot != null)
             magicShot.Seek(target); 
