@@ -5573,6 +5573,7 @@ MonoBehaviour:
   ui: {fileID: 505439488}
   upgradeCost: {fileID: 2042050277}
   upgradeButton: {fileID: 1555884914}
+  sellAmount: {fileID: 1720657725}
 --- !u!1 &512077575
 GameObject:
   m_ObjectHideFlags: 0
@@ -6943,7 +6944,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 605494883}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 505439490}
+        m_MethodName: Sell
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &605494883
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11869,7 +11881,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1028776467}
   - component: {fileID: 1028776468}
-  - component: {fileID: 1028776469}
   m_Layer: 5
   m_Name: GameOver
   m_TagString: Untagged
@@ -11914,25 +11925,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roundsText: {fileID: 910181158}
---- !u!95 &1028776469
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1028776466}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: a0b41ab83bcb74e69b66d2391e423cf6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1029122793
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15971,6 +15963,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildEffect: {fileID: 7689614616068483000, guid: 8e7e4798540fb4aa3a7e901c5fa0d158,
+    type: 3}
+  sellEffect: {fileID: 7689614616068483000, guid: 7f7f46f7264ab4c5aa74dc4350a3985b,
     type: 3}
   nodeUI: {fileID: 505439490}
 --- !u!114 &1427152598
