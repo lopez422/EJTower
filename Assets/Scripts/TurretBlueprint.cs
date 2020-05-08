@@ -7,4 +7,7 @@ public class TurretBlueprint
    public GameObject prefab;
    public int cost;
    public Vector3 offset;
+
+   public GameObject Upgradedprefab;
+   public int upgradeCost;
 }

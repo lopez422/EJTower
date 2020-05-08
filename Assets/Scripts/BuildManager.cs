@@ -27,24 +27,7 @@ public class BuildManager : MonoBehaviour
 
     public NodeUI nodeUI;
 
-    public void BuildTurretOn(Node node)
-    {
-    	if(PlayerStats.Money < turretToBuild.cost)
-    	{
-    		Debug.Log("Not Enough GUAP to build that");
-    		return;
-    	}
-
-    	PlayerStats.Money -= turretToBuild.cost;
-
-    	GameObject turret = Instantiate(turretToBuild.prefab, node.GetBuildPosition() + turretToBuild.offset, Quaternion.identity);
-    	node.turret = turret;
-
-    	GameObject effect = Instantiate(buildEffect, node.GetBuildPosition(), Quaternion.identity);
-    	Destroy(effect, 5f);
-
-    	Debug.Log("Turret built! Money left: " + PlayerStats.Money);
-    }
+    
 
     public void SelectedNode(Node node)
     {
@@ -70,5 +53,10 @@ public class BuildManager : MonoBehaviour
     {
     	turretToBuild = turret;
         DeselectNode();
+    }
+
+    public TurretBlueprint GetTurretToBuild()
+    {
+        return turretToBuild;
     }
 }
