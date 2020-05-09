@@ -36,6 +36,7 @@ public class PauseMenu : MonoBehaviour
 
     public void Menu()
     {
+        Application.LoadLevel(0);
     	Debug.Log("GOING TO MENU");
     }
 }

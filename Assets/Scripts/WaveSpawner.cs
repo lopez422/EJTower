@@ -7,7 +7,6 @@ using UnityEngine.UI;
 public class WaveSpawner : MonoBehaviour
 {
 
-
     public static int EnemiesAlive = 0;
 
     public Wave[] waves;
@@ -19,6 +18,8 @@ public class WaveSpawner : MonoBehaviour
     public Text waveCountdownText;
 
     private int waveIndex = 0;
+
+    public GameObject winUI;
 
 
     void Update()
@@ -60,11 +61,14 @@ public class WaveSpawner : MonoBehaviour
 
     	waveIndex++;
 
-        if(waveIndex == waves.Length)
+        if(waveIndex >= waves.Length && EnemiesAlive == 0)
         {
+            winUI.SetActive(true);
             Debug.Log("LEVEL 1 COMPLETE!");
             this.enabled = false;
         }
+
+        
     	Debug.Log("Wave Incoming!!");
     }
 

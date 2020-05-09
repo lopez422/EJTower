@@ -4,17 +4,17 @@ using UnityEngine.SceneManagement;
 public class MainMenuButtons : MonoBehaviour
 {
 
-    public string levelToLoad = "MainLevel";
+    public string levelToLoad = "LevelSelect";
 
     public void PlayGame()
     {
-        SceneManager.LoadScene(levelToLoad);
+        Application.LoadLevel(2);
     }
 
     public void QuitGame()
-    {
-        Debug.Log("Exiting");
+    {        
         Application.Quit();
+        //Debug.Log("Exiting");
     }
 
     public void MainMenu()

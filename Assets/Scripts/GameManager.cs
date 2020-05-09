@@ -33,7 +33,7 @@ public class GameManager : MonoBehaviour
     void EndGame()
     {
     	GameIsOver = true;
-    	Debug.Log("Game Over!");
+    	//Debug.Log("Game Over!");
 
         gameOverUI.SetActive(true);
     }
