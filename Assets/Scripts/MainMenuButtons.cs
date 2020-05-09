@@ -1,17 +1,19 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
+﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MainMenuButtons : MonoBehaviour
 {
+
+    public string levelToLoad = "MainLevel";
+
     public void PlayGame()
     {
-        Application.LoadLevel(1);
+        SceneManager.LoadScene(levelToLoad);
     }
 
     public void QuitGame()
     {
+        Debug.Log("Exiting");
         Application.Quit();
     }
 
