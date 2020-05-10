@@ -215,6 +215,83 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &210489105
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 210489106}
+  - component: {fileID: 210489108}
+  - component: {fileID: 210489107}
+  m_Layer: 5
+  m_Name: Text (7)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &210489106
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 210489105}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1206423841}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -41.99999, y: -102.400024}
+  m_SizeDelta: {x: 401, y: 75.6}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &210489107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 210489105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 6aeb1a8c0a91c44db8cab0b5a16ee447, type: 3}
+    m_FontSize: 26
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 300
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "Mouse   -  Turret Selection\n\t              Turret Creation"
+--- !u!222 &210489108
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 210489105}
+  m_CullTransparentMesh: 0
 --- !u!1 &455430327
 GameObject:
   m_ObjectHideFlags: 0
@@ -341,7 +418,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -10.1, y: 16.6}
+  m_AnchoredPosition: {x: -36.399986, y: -0.40000153}
   m_SizeDelta: {x: 233, y: 47.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &455775622
@@ -418,7 +495,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -10.1, y: -23.8}
+  m_AnchoredPosition: {x: -36.399986, y: -40.800003}
   m_SizeDelta: {x: 233, y: 47.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &542180768
@@ -539,7 +616,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -10.1, y: 64.20006}
+  m_AnchoredPosition: {x: -36.399986, y: 47.200058}
   m_SizeDelta: {x: 233, y: 47.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &909240595
@@ -618,7 +695,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -15.7, y: -227.9}
+  m_AnchoredPosition: {x: -38.99999, y: -297.9}
   m_SizeDelta: {x: 201.6, y: 66}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &971283338
@@ -1048,7 +1125,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -15.7, y: 207}
+  m_AnchoredPosition: {x: -42, y: 190}
   m_SizeDelta: {x: 233, y: 47.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1196902069
@@ -1082,7 +1159,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: D   -  Move Up
+  m_Text: W   -  Move Up
 --- !u!222 &1196902070
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1189,6 +1266,7 @@ RectTransform:
   - {fileID: 455775621}
   - {fileID: 542180767}
   - {fileID: 1965084915}
+  - {fileID: 210489106}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1314,7 +1392,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -10.1, y: 111.80003}
+  m_AnchoredPosition: {x: -36.399986, y: 94.80003}
   m_SizeDelta: {x: 233, y: 47.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1650784591
@@ -1391,7 +1469,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -10.1, y: 159.40002}
+  m_AnchoredPosition: {x: -36.399986, y: 142.40002}
   m_SizeDelta: {x: 244.2, y: 47.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1726498162
@@ -1468,8 +1546,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -15.7, y: -85.4}
-  m_SizeDelta: {x: 401, y: 75.6}
+  m_AnchoredPosition: {x: -41.99999, y: -160.5}
+  m_SizeDelta: {x: 401, y: 40.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1965084916
 MonoBehaviour:
@@ -1502,7 +1580,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Mouse   -  Turret Selection\n\t              Turret Creation"
+  m_Text: Scroll   -  Zoom In/Out
 --- !u!222 &1965084917
 CanvasRenderer:
   m_ObjectHideFlags: 0
