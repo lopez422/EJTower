@@ -29,6 +29,13 @@ public class WaveSpawner : MonoBehaviour
             return;
         }
 
+        if(waveIndex == waves.Length && EnemiesAlive == 0)
+        {
+            winUI.SetActive(true);
+            Debug.Log("LEVEL 1 COMPLETE!");
+            this.enabled = false;
+        }
+
     	if(countdown <= 0f)
     	{
     		StartCoroutine(SpawnWave());
@@ -61,12 +68,7 @@ public class WaveSpawner : MonoBehaviour
 
     	waveIndex++;
 
-        if(waveIndex >= waves.Length && EnemiesAlive == 0)
-        {
-            winUI.SetActive(true);
-            Debug.Log("LEVEL 1 COMPLETE!");
-            this.enabled = false;
-        }
+        
 
         
     	Debug.Log("Wave Incoming!!");

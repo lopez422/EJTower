@@ -21,4 +21,9 @@ public class MainMenuButtons : MonoBehaviour
     {
         Application.LoadLevel(0);
     }
+    
+    public void HowToPlay()
+    {
+        Application.LoadLevel(6);
+    }
 }
